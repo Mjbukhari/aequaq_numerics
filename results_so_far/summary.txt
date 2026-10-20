@@ -1,0 +1,52 @@
+== 2D Biot: worst kappa_alpha over (c0, k~) per lambda; truncated vs untruncated frame
+n=4   truncated   gamma=0.1248 Gamma=4.253 worst=537 (lam=1e-06)  per lam: 1e-06:537 0.01:533 1:341 4:510 16:256 10000:250 1e+08:250
+n=4   untruncated gamma=0.1248 Gamma=4.253 worst=681 (lam=4)  per lam: 1e-06:560 0.01:556 1:385 4:681 16:272 10000:250 1e+08:250
+n=8   truncated   gamma=0.1307 Gamma=5.664 worst=756 (lam=1e-06)  per lam: 1e-06:756 0.01:750 1:468 4:676 16:338 10000:327 1e+08:327
+n=8   untruncated gamma=0.1307 Gamma=5.772 worst=1024 (lam=4)  per lam: 1e-06:813 0.01:807 1:561 4:1024 16:371 10000:327 1e+08:327
+n=16  truncated   gamma=0.1331 Gamma=6.803 worst=975 (lam=1e-06)  per lam: 1e-06:975 0.01:967 1:596 4:836 16:420 10000:410 1e+08:410
+n=16  untruncated gamma=0.1331 Gamma=7.769 worst=1361 (lam=4)  per lam: 1e-06:1067 0.01:1060 1:739 4:1361 16:470 10000:410 1e+08:410
+n=32  truncated   gamma=0.1339 Gamma=7.720 worst=1192 (lam=1e-06)  per lam: 1e-06:1192 1:722 4:993
+n=32  untruncated gamma=0.1339 Gamma=9.769 worst=1693 (lam=4)  per lam: 1e-06:1320 1:915 4:1693
+
+== 3D Case 2 (geometry not designed for the frame)
+n=8   variant=a    c=100     gamma=0.0193 alpha2=38.0 smin=0.0193 kappa_alpha=1.97e+03 kappa(A)=7.3e+04
+n=8   variant=a    c=10000   gamma=0.00019 alpha2=38.0 smin=0.00019 kappa_alpha=2e+05 kappa(A)=6.9e+08
+n=8   variant=a    c=1e+06   gamma=3.43e-05 alpha2=38.0 smin=1.9e-06 kappa_alpha=2e+07 kappa(A)=6.9e+12
+n=8   variant=b    c=100     gamma=0.135 alpha2=39.0 smin=0.135 kappa_alpha=288 kappa(A)=7.3e+04
+n=8   variant=b    c=10000   gamma=0.0872 alpha2=39.0 smin=0.0872 kappa_alpha=447 kappa(A)=6.9e+08
+n=8   variant=b    c=1e+06   gamma=0.0868 alpha2=39.0 smin=0.0866 kappa_alpha=450 kappa(A)=6.9e+12
+n=8   variant=none c=100     gamma=0.000242 alpha2=37.0 smin=0.000242 kappa_alpha=1.53e+05 kappa(A)=7.3e+04
+n=8   variant=none c=10000   gamma=-5.08e-08 alpha2=37.0 smin=2.77e-08 kappa_alpha=1.34e+09 kappa(A)=6.9e+08
+n=8   variant=none c=1e+06   gamma=-0.00224 alpha2=37.0 smin=2.77e-12 kappa_alpha=1.34e+13 kappa(A)=6.9e+12
+n=16  variant=a    c=100     gamma=0.0226 alpha2=52.0 smin=0.0226 kappa_alpha=2.3e+03 kappa(A)=1.3e+06
+n=16  variant=a    c=10000   gamma=0.000224 alpha2=52.0 smin=0.000223 kappa_alpha=2.33e+05 kappa(A)=1.3e+10
+n=16  variant=a    c=1e+06   gamma=-0.000976 alpha2=52.1 smin=2.23e-06 kappa_alpha=2.33e+07 kappa(A)=1.3e+14
+n=16  variant=b    c=100     gamma=0.164 alpha2=53.0 smin=0.164 kappa_alpha=324 kappa(A)=1.3e+06
+n=16  variant=b    c=10000   gamma=0.109 alpha2=53.0 smin=0.109 kappa_alpha=487 kappa(A)=1.3e+10
+n=16  variant=b    c=1e+06   gamma=0.107 alpha2=53.1 smin=0.108 kappa_alpha=491 kappa(A)=1.3e+14
+
+== 2D lognormal, n=16
+decay 1.0 sigma 1 (12 samples): contrast 3.7e+00-6.0e+01 | base ka median 44 worst 47 (gamma min 0.275) | decade-mode ka worst 47 | plain kappa(A) worst 6.4e+02
+decay 1.0 sigma 2 (12 samples): contrast 1.4e+01-3.7e+03 | base ka median 47 worst 54 (gamma min 0.272) | decade-mode ka worst 53 | plain kappa(A) worst 1.5e+04
+decay 1.0 sigma 3 (12 samples): contrast 5.1e+01-2.2e+05 | base ka median 49 worst 64 (gamma min 0.271) | decade-mode ka worst 57 | plain kappa(A) worst 4.6e+05
+decay 1.0 sigma 4 (12 samples): contrast 1.9e+02-1.3e+07 | base ka median 50 worst 76 (gamma min 0.260) | decade-mode ka worst 61 | plain kappa(A) worst 1.6e+07
+decay 0.5 sigma 1 (12 samples): contrast 5.0e+01-2.0e+03 | base ka median 58 worst 68 (gamma min 0.272) | decade-mode ka worst 62 | plain kappa(A) worst 5.5e+03
+decay 0.5 sigma 2 (12 samples): contrast 2.5e+03-3.9e+06 | base ka median 79 worst 163 (gamma min 0.123) | decade-mode ka worst 93 | plain kappa(A) worst 8.6e+06
+decay 0.5 sigma 3 (12 samples): contrast 1.2e+05-7.7e+09 | base ka median 93 worst 488 (gamma min 0.041) | decade-mode ka worst 152 | plain kappa(A) worst 2.7e+10
+decay 0.5 sigma 4 (12 samples): contrast 6.1e+06-1.5e+13 | base ka median 124 worst 1735 (gamma min 0.012) | decade-mode ka worst 260 | plain kappa(A) worst 9.7e+13
+
+== 2D lognormal, n=32
+decay 0.5 sigma 2 (1 samples): contrast 5.0e+03-5.0e+03 | base ka median 87 worst 87 (gamma min 0.273) | decade-mode ka worst 80 | plain kappa(A) worst 3.0e+04
+
+== Case 1-M frames
+n=16  J=4    LA     high      alpha2=   90 gamma=0.2139 Gamma=9.59 ||g~|| ||b~||=4.7 smin=-
+n=16  J=4    LA     low       alpha2=   90 gamma=0.2219 Gamma=9.68 ||g~|| ||b~||=4.2 smin=-
+n=16  J=4    plain  low       alpha2=   53 gamma=0.1714 Gamma=11.87 ||g~|| ||b~||=4.2 smin=-
+
+== n = 4 column-state circuits
+edge n=2         [256, 8] qubits=12 s=3 alpha=1.7321 err=3.8e-16 CX=7928 Rz=11700
+edge n=4         [256, 40] qubits=15 s=3 alpha=1.7321 err=2.9e-16 CX=65216 Rz=112998
+curl n=2         [256, 1] qubits=10 s=1 alpha=1.0000 err=2.3e-16 CX=1790 Rz=2030
+curl n=4         [256, 9] qubits=13 s=2 alpha=1.4142 err=2.6e-16 CX=16112 Rz=29520
+pressure         [256, 32] qubits=14 s=1 alpha=1.0000 err=1.2e-16 CX=32480 Rz=2276
+full H (direct)  [256, 90] qubits=16 s=9 alpha=3.0000 err=2.8e-16 CX=130688 Rz=257738
